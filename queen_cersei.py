@@ -23,7 +23,11 @@ def handle_command(command, channel):
     response = "Not sure what you mean. Use the *" + EXAMPLE_COMMAND + \
                "* command with numbers, delimited by spaces."
     if command.startswith(EXAMPLE_COMMAND):
-        response = "Sure...write some more code then I can do that!"
+        response = "Msh ha3ml 7aga"
+
+    if command.startswith("meniawy"):
+        response = "Seebo Meniawy fi 7alo"
+
     slack_client.api_call("chat.postMessage", channel=channel,
                           text=response, as_user=True)
 
