@@ -1,0 +1,21 @@
+import requests
+url = "http://api.123kora.com/api/v1/leagues?date=20160930&lang=en"
+proxy = {'http':'http://120.69.14.144:8888/'}
+response = requests.get(url, proxies=proxy)
+print response.content
+clear
+history
+hdr = {'host': "api.123kora.com",'origin': "http://www.123kora.com",'dnt': "1",}
+response = requests.get(url,headers=hdr ,proxies=proxy)
+print response.content
+response = requests.get(url,headers=hdr ,proxies=proxy)
+response = requests.get(url,headers=hdr ,proxies=proxy)
+print response.content
+proxy = {'http':'http://217.23.185.106:8080'}
+response = requests.get(url,headers=hdr ,proxies=proxy)
+response = requests.get(url,headers=hdr ,proxies=proxy)
+proxy = {'http':'http://120.69.14.144:8888/'}
+response = requests.get(url,headers=hdr ,proxies=proxy)
+print response.content
+history
+
